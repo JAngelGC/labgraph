@@ -1,9 +1,9 @@
-"use client"
+'use client';
 
-import classNames from "classnames";
-import React, { PropsWithChildren, useState } from "react";
+import classNames from 'classnames';
+import React, { PropsWithChildren, useState } from 'react';
 
-import SideBar from "./SideBar";
+import SideBar from './SideBar';
 
 const SideBarLayout = (props: PropsWithChildren) => {
   const [collapsed, setSidebarCollapsed] = useState(false);
@@ -11,10 +11,10 @@ const SideBarLayout = (props: PropsWithChildren) => {
   return (
     <div
       className={classNames({
-        "grid bg-[#F0F2F5] min-h-screen": true,
-        "grid-cols-sidebar": !collapsed,
-        "grid-cols-sidebar-collapsed": collapsed,
-        "transition-[grid-template-columns] duration-300 ease-in-out": true,
+        'grid bg-[#202123] min-h-screen': true,
+        'grid-cols-sidebar': !collapsed,
+        'grid-cols-sidebar-collapsed': collapsed,
+        'transition-[grid-template-columns] duration-300 ease-in-out': true,
       })}
     >
       <SideBar
@@ -27,4 +27,3 @@ const SideBarLayout = (props: PropsWithChildren) => {
 };
 
 export default SideBarLayout;
-
